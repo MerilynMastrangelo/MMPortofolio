@@ -1,0 +1,119 @@
+$font0: 'Heebo', sans-serif;
+$colour0: #fff;
+$colour1: #242424;
+$colour2: #696969;
+$colour3: #c5c5c5;
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font0;
+}
+
+a{
+    text-decoration: none;
+    color: $colour1;
+}
+
+li{
+    list-style-type: none;
+}
+
+// Header
+.header-container{
+    font-size: 1.2rem;
+    display: inline;
+    margin: 40px;
+}
+.menu-nav{
+    float: right;
+    margin: 30px 60px;
+    
+li{
+    padding: 10px;
+    float: left;
+    
+}
+a{
+    font-weight: 500;
+}
+a:hover{
+    opacity: 0.7;
+}
+
+} 
+
+// Home section
+.home{
+    color: $colour1;
+    margin-left: 10%; 
+}
+    .home-content{
+        margin-top: 80px;
+    
+    h1{
+        font-size: 3.8rem;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 3rem;
+        width: 70%;
+        word-break: keep-all;
+        // word-wrap: break-word;
+        font-weight: 200;
+        line-height: 1.5;
+        margin-bottom: 75px;
+    }
+    img{
+        margin-left: 10px;
+    }
+    .scroll-down{
+        font-weight: 800;
+        font-size: 1rem;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+    a:hover{
+        opacity: 0.7;
+    }
+    }
+
+// About
+#about{
+    margin: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .about-social{
+        width: 10%;
+        .social{
+            
+        }
+        li{
+            padding: 10px 0;
+        }
+        a{
+            font-size: 1.2rem;
+            color: $colour3;
+            transition: all 0.2s;
+        }
+        a:hover{
+            color: $colour1;
+        }
+    }
+    .about-container{
+        margin: 0 20%;
+        h2{
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        li{
+            list-style-type: square;
+        }
+    }
+}
+
+    
+
+
+

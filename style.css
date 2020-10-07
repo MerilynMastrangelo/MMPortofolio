@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #242424;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header-container {
+  font-size: 1.2rem;
+  display: inline;
+  margin: 40px;
+}
+
+.menu-nav {
+  float: right;
+  margin: 30px 60px;
+}
+
+.menu-nav li {
+  padding: 10px;
+  float: left;
+}
+
+.menu-nav a {
+  font-weight: 500;
+}
+
+.menu-nav a:hover {
+  opacity: 0.7;
+}
+
+.home {
+  color: #242424;
+  margin-left: 10%;
+}
+
+.home-content {
+  margin-top: 80px;
+}
+
+.home-content h1 {
+  font-size: 3.8rem;
+  font-weight: 800;
+}
+
+.home-content h2 {
+  font-size: 3rem;
+  width: 70%;
+  word-break: keep-all;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-bottom: 75px;
+}
+
+.home-content img {
+  margin-left: 10px;
+}
+
+.home-content .scroll-down {
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.home-content a:hover {
+  opacity: 0.7;
+}
+
+#about {
+  margin: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .about-social {
+  width: 10%;
+}
+
+#about .about-social li {
+  padding: 10px 0;
+}
+
+#about .about-social a {
+  font-size: 1.2rem;
+  color: #c5c5c5;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#about .about-social a:hover {
+  color: #242424;
+}
+
+#about .about-container {
+  margin: 0 20%;
+}
+
+#about .about-container h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#about .about-container li {
+  list-style-type: square;
+}
+/*# sourceMappingURL=style.css.map */
