@@ -47,20 +47,20 @@ a:hover{
 // Home section
 .home{
     color: $colour1;
-    margin-left: 10%; 
+    margin: 0 10%; 
 }
     .home-content{
-        margin-top: 80px;
+        margin-top: 70px;
     
     h1{
         font-size: 3.8rem;
         font-weight: 800;
+        margin: 0;
     }
     h2{
         font-size: 3rem;
-        width: 70%;
+        width: 95%;
         word-break: keep-all;
-        // word-wrap: break-word;
         font-weight: 200;
         line-height: 1.5;
         margin-bottom: 75px;
@@ -81,15 +81,12 @@ a:hover{
 
 // About
 #about{
-    margin: 10%;
+    margin: 15% 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     .about-social{
         width: 10%;
-        .social{
-            
-        }
         li{
             padding: 10px 0;
         }
@@ -116,7 +113,7 @@ a:hover{
 
 // Projects 
 #projects{
-    margin: 10%;
+    margin: 0 10%;
     h1{
         font-size: 2.2rem;
         font-weight: 800;
@@ -133,7 +130,9 @@ a:hover{
         opacity: 1;
         cursor: pointer;
     }
-
+    .project-content{
+        margin-top: 50px;
+    }
     .project-description{
         position: absolute;
         z-index: 1;
@@ -171,7 +170,6 @@ a:hover{
         display: flex;
         justify-content: space-between;
         position: relative;
-        margin-bottom: 150px;
         
         .project-description{
             top: 40%;
@@ -179,19 +177,15 @@ a:hover{
             text-align: right;
         }
         .project-content{
-            margin-top: 70px;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-        }
-        .project-title{
-            margin-bottom: 150px;
         }
             
         }
         
     .project-container-2{
-        margin-bottom: 150px;
+        margin: 170px 0;
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -199,14 +193,14 @@ a:hover{
             display: flex;
             align-items: flex-start;
             flex-direction: column;
-            margin-top: 70px;
+            // margin-top: 70px;
         }
         .project-description{
             right: 50%;
             top: 40%;
         }
         .project-title{
-            margin-bottom: 150px;
+            // margin-bottom: 150px;
         }
     }
 }
@@ -214,7 +208,7 @@ a:hover{
 #contact{
     text-align: left;
     color: $colour1;
-    margin: 25% 10%;
+    margin: 30% 10%;
     h1{
         font-size: 3rem;
         font-weight: 300;
@@ -231,9 +225,173 @@ a:hover{
     span:hover{
         border-bottom: 4px solid $colour1;
     }
+    img{
+        margin-left: 5px;
+    }
 }
 
+hr{
+    margin: 0 10%;
+    background-color: $colour3;
+    color: $colour3;
+}
+// Footer
+.footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5% 10%;
+        font-size: 1.2rem;
+        color: $colour2;
+    p{
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        li{
+            padding-right: 30px;
+        }
+        a{
+            color: $colour2;
+            transition: all 0.3s;
+        }
+        a:hover{
+            color: $colour1;
+        }
+    }
+}
+
+@media screen and(max-width: 760px){
+    body{
+        // margin: 0 5%;
+        
+    }
+    .home-content{
+        margin: 0 5%;
+        margin: 120px 0;
+        h1{
+            font-size: 3rem;
+        }
+        img{
+            width: 40px;
+        }
+        h2{
+            font-size: 2rem;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        .scroll-down{
+           font-size: 0.9rem; 
+        }
+    }
+    #about{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        .about-container{
+            margin: 0 5%;
+        }
+        .about-social{
+            order: 1;
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        li{
+            padding: 0 10px;
+        }
+        }
+        
+    }
     
+}
+
+@media screen and(max-width: 1000px){
+    .home-content{
+        h1{
+            font-size: 2.7rem;
+        }
+        h2{
+            font-size: 2.4rem;
+        }
+    }
+    
+    #projects{
+        margin: 20% 5%;
+        h1{
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 100%;
+        }
+        h2{
+            margin-bottom: 0;
+        }
+        .project-container{
+            display: initial;
+        }
+        .project-title{
+            margin-bottom: 0;
+        }
+        .project-description p{
+            background-color: $colour0;
+            color: $colour1;
+            padding: 0px;
+        }
+        .project-description{
+            position: static;
+            margin: 0;
+        }
+        .project-container-2{
+            display: flex;
+            flex-flow: column;
+            margin: 75px 0;
+            .project-description{
+            position: static;
+            }
+            .project-pic{
+                order: 1;
+            }
+            .project-content{
+                order: 2;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 550px){
+    .menu-nav{
+        margin: 0 20px;
+    }
+    .home-content{
+        margin: 40% 0;
+        h1{
+            font-size: 2.3rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+
+    #contact{
+        h1{
+            font-size: 1.1rem;
+        }
+        span{
+            font-size: 1.5rem;
+        }
+        img{
+            width: 28px;
+        }
+    }
+
+    .footer{
+        font-size: 1rem;
+    }
+}
 
 
 
