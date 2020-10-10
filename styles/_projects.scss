@@ -1,0 +1,82 @@
+#projects{
+    margin: 0 10%;
+    h1{
+        font-size: 2.2rem;
+        font-weight: 800;
+        margin-bottom: 5%;
+    }
+    .project-pic{
+        opacity: 0.6;
+        transition: all 0.5s;
+    }
+    img{
+        width: 600px;
+    }
+    .project-pic:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    .project-content{
+        margin-top: 50px;
+    }
+    .project-description{
+        position: absolute;
+        z-index: 1;
+    }
+
+    .project-description p{
+        background-color: $colour4;
+        color: $colour0;
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+
+    h2{
+        margin: 0;
+        color: $colour4;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    
+    .links{
+        margin-top: 10px;
+        i{
+            font-size: 26px;
+            padding: 0 4px;
+            color: $colour4;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+        i:hover{
+            opacity: 0.6;
+        }
+    }
+
+    .project-container{
+        @include flexSpaceB();
+        position: relative;
+        
+        .project-description{
+            top: 40%;
+            left: 50%;
+            text-align: right;
+        }
+        .project-content{
+            @include projectFlex();
+        }
+            
+        }
+        
+    .project-container-2{
+        margin: 170px 0;
+        @include flexSpaceB();
+        position: relative;
+        .project-content{
+            @include projectFlex();
+        }
+        .project-description{
+            right: 50%;
+            top: 40%;
+        }
+    }
+}

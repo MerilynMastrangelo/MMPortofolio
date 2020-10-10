@@ -1,0 +1,127 @@
+@media screen and(max-width: 760px){
+    .home-content{
+        margin: 0 5%;
+        margin: 120px 0;
+        h1{
+            font-size: 3rem;
+        }
+        img{
+            width: 40px;
+        }
+        h2{
+            font-size: 2rem;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        .scroll-down{
+           font-size: 0.9rem; 
+        }
+    }
+    #about{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        .about-container{
+            margin: 0 5%;
+        }
+        .about-social{
+            order: 1;
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        li{
+            padding: 0 10px;
+        }
+        }
+        
+    }
+    
+}
+
+@media screen and(max-width: 1000px){
+    .home-content{
+        h1{
+            font-size: 2.7rem;
+        }
+        h2{
+            font-size: 2.4rem;
+        }
+    }
+    
+    #projects{
+        margin: 20% 5%;
+        h1{
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 100%;
+        }
+        h2{
+            margin-bottom: 0;
+        }
+        .project-container{
+            display: initial;
+        }
+        .project-title{
+            margin-bottom: 0;
+        }
+        .project-description p{
+            background-color: $colour0;
+            color: $colour1;
+            padding: 0px;
+        }
+        .project-description{
+            position: static;
+            margin: 0;
+        }
+        .project-container-2{
+            display: flex;
+            flex-flow: column;
+            margin: 75px 0;
+            .project-description{
+            position: static;
+            }
+            .project-pic{
+                order: 1;
+            }
+            .project-content{
+                order: 2;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 550px){
+    .menu-nav{
+        margin: 0 20px;
+    }
+    .home-content{
+        margin: 40% 0;
+        h1{
+            font-size: 2.3rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+
+    #contact{
+        h1{
+            font-size: 1.1rem;
+        }
+        span{
+            font-size: 1.5rem;
+        }
+        img{
+            width: 28px;
+        }
+    }
+
+    .footer{
+        font-size: 1rem;
+    }
+}
+

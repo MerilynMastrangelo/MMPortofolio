@@ -1,0 +1,38 @@
+@mixin flexSpaceB(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin projectFlex() {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+@import 'variables';
+@import 'header';
+@import 'about';
+@import 'contact';
+@import 'footer';
+@import 'responsive';
+@import 'projects';
+@import 'home';
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font0;
+}
+
+a{
+    text-decoration: none;
+    color: $colour1;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+  

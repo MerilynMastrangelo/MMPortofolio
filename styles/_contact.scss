@@ -1,0 +1,30 @@
+#contact{
+    text-align: left;
+    color: $colour1;
+    margin: 30% 10%;
+    h1{
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    span{
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 0.2;
+        border-bottom: 4px solid $colour3;
+        padding-bottom: 2px;
+        transition: all 0.6s;
+        cursor: pointer;
+    }
+    span:hover{
+        border-bottom: 4px solid $colour1;
+    }
+    img{
+        margin-left: 5px;
+    }
+}
+
+hr{
+    margin: 0 10%;
+    background-color: $colour3;
+    color: $colour3;
+}

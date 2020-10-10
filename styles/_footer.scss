@@ -1,0 +1,23 @@
+.footer{
+    @include flexSpaceB();
+    margin: 5% 10%;
+    font-size: 1.2rem;
+    color: $colour2;
+p{
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    li{
+        padding-right: 30px;
+    }
+    a{
+        color: $colour2;
+        transition: all 0.3s;
+    }
+    a:hover{
+        color: $colour1;
+    }
+}
+}
