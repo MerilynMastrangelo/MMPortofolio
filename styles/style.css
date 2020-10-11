@@ -175,7 +175,7 @@ hr {
     font-size: 0.9rem;
   }
   #about {
-    margin: 0;
+    margin: 20% 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -185,7 +185,7 @@ hr {
             flex-direction: column;
   }
   #about .about-container {
-    margin: 0 5%;
+    margin: 0 2%;
   }
   #about .about-social {
     -webkit-box-ordinal-group: 2;
@@ -216,30 +216,30 @@ hr {
     font-size: 2.4rem;
   }
   #projects {
-    margin: 20% 5%;
+    margin: 0 10% !important;
   }
   #projects h1 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  #projects img {
-    width: 100%;
-  }
   #projects h2 {
     margin-bottom: 0;
   }
   #projects .project-container {
-    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 75px 0;
+    margin: 0 2%;
   }
-  #projects .project-title {
+  #projects .project-container .project-title {
     margin-bottom: 0;
   }
-  #projects .project-description p {
-    background-color: #fff;
-    color: #242424;
-    padding: 0px;
-  }
-  #projects .project-description {
+  #projects .project-container .project-description {
     position: static;
     margin: 0;
   }
@@ -276,16 +276,22 @@ hr {
     margin: 40% 0;
   }
   .home-content h1 {
-    font-size: 2.3rem;
+    font-size: 1rem;
   }
   .home-content h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  #projects {
+    margin: 0 2% !important;
+  }
+  #projects .project-container {
+    margin: 10px 0 !important;
   }
   #contact h1 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   #contact span {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   #contact img {
     width: 28px;
@@ -309,10 +315,11 @@ hr {
   opacity: 0.6;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  max-width: 650px;
 }
 
 #projects img {
-  width: 600px;
+  width: 100%;
 }
 
 #projects .project-pic:hover {

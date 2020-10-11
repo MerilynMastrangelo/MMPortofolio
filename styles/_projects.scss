@@ -8,9 +8,11 @@
     .project-pic{
         opacity: 0.6;
         transition: all 0.5s;
+        max-width: 650px;
     }
     img{
-        width: 600px;
+        
+        width: 100%;
     }
     .project-pic:hover{
         opacity: 1;

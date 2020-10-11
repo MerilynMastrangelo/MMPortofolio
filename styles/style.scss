@@ -8,6 +8,11 @@
     align-items: flex-start;
     flex-direction: column;
 }
+@mixin projectContainer() {
+    display: flex;
+    flex-flow: column;
+    margin: 75px 0;
+}
 @import 'variables';
 @import 'header';
 @import 'about';
