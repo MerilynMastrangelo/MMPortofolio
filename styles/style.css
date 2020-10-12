@@ -445,6 +445,9 @@ hr {
   .header-container {
     font-size: 1rem;
   }
+  #home .home-container {
+    min-height: 70vh;
+  }
   #home .home-content {
     margin: 0 3%;
   }
