@@ -1,8 +1,10 @@
 #about{
-    margin: 15% 10%;
-    @include flexSpaceB();
+    min-height: 100vh;
+    .about-container{
+        @include flexSpaceB();
+        margin: 0 20%;
+    }
     .about-social{
-        width: 10%;
         li{
             padding: 10px 0;
         }
@@ -15,8 +17,8 @@
             color: $colour1;
         }
     }
-    .about-container{
-        margin: 0 20%;
+    .about-content{
+        padding: 0 100px;
         h2{
             font-weight: 700;
             font-size: 2.5rem;

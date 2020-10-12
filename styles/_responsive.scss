@@ -1,58 +1,6 @@
-@media screen and(max-width: 760px){
-    .home-content{
-        margin: 0 5%;
-        margin: 120px 0;
-        h1{
-            font-size: 3rem;
-        }
-        img{
-            width: 40px;
-        }
-        h2{
-            font-size: 2rem;
-            margin-bottom: 40px;
-            width: 100%;
-        }
-        .scroll-down{
-           font-size: 0.9rem; 
-        }
-    }
-    #about{
-        margin: 20% 0;
-        display: flex;
-        flex-direction: column;
-        .about-container{
-            margin: 0 2%;
-        }
-        .about-social{
-            order: 1;
-        }
-        .social{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        li{
-            padding: 0 10px;
-        }
-        }
-        
-    }
-    
-    
-}
-
 @media screen and(max-width: 1000px){
-    .home-content{
-        h1{
-            font-size: 2.7rem;
-        }
-        h2{
-            font-size: 2.4rem;
-        }
-    }
-    
     #projects{
-        margin: 0 10% !important;
+        margin: 0 10%;
         h1{
             font-size: 2rem;
             margin-bottom: 20px;
@@ -88,42 +36,70 @@
     }
 }
 
-@media screen and(max-width: 550px){
-    .menu-nav{
-        margin: 0 20px;
+@media screen and(max-width: 760px){
+    .header-container{
+        font-size: 1rem;
     }
-    .home-content{
-        margin: 40% 0;
-        h1{
-            font-size: 1rem;
-        }
-        h2{
-            font-size: 1.5rem;
+    #home{
+        .home-content{
+            margin: 0 3%;
+            h1{
+                font-size: 3.0rem;
+            }
+            h2{
+                font-size: 2rem;
+            }
         }
     }
-
+    #about{
+        margin: 0 2%;
+        .about-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .about-social{
+            order: 3;
+        }
+        .about-content{
+            order: 1;
+            padding: 0 3%;
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        li{
+            padding: 0 10px;
+        }
+        }
+        
+    }
     #projects{
-        margin: 0 2% !important;
+        margin: 0 2%;
         .project-container{
-            margin: 10px 0 !important;
+            margin: 10px 0 ;
         }
     }
 
     #contact{
+        margin: 30% 3%;
         h1{
             font-size: 1.5rem;
         }
         span{
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         img{
             width: 28px;
         }
     }
 
-
-    .footer{
-        font-size: 1rem;
+    #footer{
+        .footer{
+            font-size: 1rem;
+        }
     }
 }
 
+
+  

@@ -14,19 +14,13 @@
     margin: 75px 0;
 }
 @import 'variables';
-@import 'header';
-@import 'about';
-@import 'contact';
-@import 'footer';
-@import 'responsive';
-@import 'projects';
-@import 'home';
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $font0;
+    overflow-x: unset;
 }
 
 a{
@@ -38,6 +32,10 @@ li{
     list-style-type: none;
 }
 
-
-
-  
+@import 'header';
+@import 'home';
+@import 'about';
+@import 'projects';
+@import 'contact';
+@import 'footer';
+@import 'responsive';

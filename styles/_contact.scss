@@ -1,7 +1,12 @@
 #contact{
     text-align: left;
     color: $colour1;
-    margin: 30% 10%;
+    margin: 0 10%;
+    min-height: 100vh;
+    vertical-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     h1{
         font-size: 3rem;
         font-weight: 300;

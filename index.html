@@ -6,52 +6,58 @@
     <title>Merilyn Mastrangelo | Web Developer</title>
     <link rel="icon" type="image/png" sizes="16x16" href="img/square.png">
     <link rel="stylesheet" href="/styles/style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="header-container">
-        <ul class="menu-nav">
-            <li><a href="#about">About me</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-                <div class="lightDark">
-                    Hi
-                </div>
-            </li>
-        </ul>
-    </nav>  
+    
     <section id="home" class="home">
-        <div class="home-content">
-            <h1>Hi, I'm Merilyn <img width="40px" src="img/hand-2x.png" alt="waving hand"></h1>
-            <h2>I'm a web developer focused on bulding amazing interfaces and create great experiences in the web.</h2>
-            <a class="scroll-down" href="#about">Scroll Down</a>
-        </div>
+        <nav class="header-container">
+            <ul class="menu-nav">
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <li>
+                    <div class="lightDark">
+                        Hi
+                    </div>
+                </li> -->
+            </ul>
+        </nav>  
+        <div class="home-container">
+            <div class="home-content">
+                <h1>Hi, I'm Merilyn <img src="img/hand-2x.png" alt="waving hand"></h1>
+                <h2>I'm a web developer focused on bulding amazing interfaces and create great experiences in the web.</h2>
+                <a class="scroll-down" href="#about">Scroll Down</a>
+            </div>
+        </div>  
     </section>
     <section id="about">
-        <div class="about-social">
-            <ul class="social">
-                <li><a href="">Resume</a></li>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">GitHub</a></li>
-            </ul>
-        </div>
         <div class="about-container">
-            <h2>About me</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non incidunt nisi, et asperiores tenetur libero recusandae ex adipisci quos deleniti quo eaque eum, quia vel sunt iure perspiciatis odio ipsum?</p>
-            <p>Here are the skills and tecnologies I've been working with:
-            </p>
-            <div class="skills">
-                <ul class="column">
-                    <li>HTML & CSS</li>
-                    <li>JS</li>
-                    <li>SASS</li>
+            <div class="about-social">
+                <ul class="social">
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">GitHub</a></li>
                 </ul>
-                <ul class="column">
-                    <li>Materialize</li>
-                    <li>Light React</li>
-                    <li>Light PHP</li>
-                </ul>
+            </div>
+            <div class="about-content">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non incidunt nisi, et asperiores tenetur libero recusandae ex adipisci quos deleniti quo eaque eum, quia vel sunt iure perspiciatis odio ipsum?</p>
+                <p>Here are the skills and tecnologies I've been working with:
+                </p>
+                <div class="skills">
+                    <ul class="column">
+                        <li>HTML & CSS</li>
+                        <li>JS</li>
+                        <li>SASS</li>
+                    </ul>
+                    <ul class="column">
+                        <li>Materialize</li>
+                        <li>Light React</li>
+                        <li>Light PHP</li>
+                    </ul>
+                </div>
             </div>
             <!-- <p>Here's my <a href="">resume</a>, my <a href="">Linkedin</a> profile, and my <a href="">GitHub</a> repositories</p> -->
         </div>
@@ -115,7 +121,7 @@
         <a href=""><span>merilynlm@yahoo.com.br</span></a>
     </section>
     <hr>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         
         <p>&copy Merilyn Mastrangelo</p>
         <ul>
