@@ -1,6 +1,5 @@
 #about{
     min-height: 100vh;
-    padding-top: 120px;
     .about-container{
         @include flexSpaceB();
         margin: 0 20%;
@@ -20,6 +19,18 @@
     }
     .about-content{
         padding: 0 100px;
+        p{
+            a{
+                font-weight: 500;
+                transition: all 0.5s;
+            }
+            a:hover{
+                color: $colour2;
+            }
+        }
+        .italic{
+            font-style: italic;
+        }
         h2{
             font-weight: 700;
             font-size: 2.5rem;

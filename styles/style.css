@@ -4,7 +4,16 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Heebo", sans-serif;
-  overflow-x: unset;
+}
+
+main {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 a {
@@ -18,7 +27,7 @@ li {
 
 .header-container {
   position: absolute;
-  right: 12px;
+  right: 2%;
   font-size: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,7 +121,6 @@ li {
 
 #about {
   min-height: 100vh;
-  padding-top: 120px;
 }
 
 #about .about-container {
@@ -145,6 +153,20 @@ li {
 
 #about .about-content {
   padding: 0 100px;
+}
+
+#about .about-content p a {
+  font-weight: 500;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#about .about-content p a:hover {
+  color: #696969;
+}
+
+#about .about-content .italic {
+  font-style: italic;
 }
 
 #about .about-content h2 {
