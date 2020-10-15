@@ -153,6 +153,7 @@ li {
 }
 
 #about .about-content {
+  width: 90%;
   padding: 0 100px;
 }
 
@@ -186,7 +187,7 @@ li {
 }
 
 #about .about-content .column {
-  padding-right: 80px;
+  padding-right: 60px;
 }
 
 #projects {
@@ -458,6 +459,9 @@ hr {
         -ms-flex-order: 2;
             order: 2;
   }
+  #projects .links {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -473,10 +477,8 @@ hr {
   #home .home-content h2 {
     font-size: 2rem;
   }
-  #about {
-    margin: 0 2%;
-  }
   #about .about-container {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
