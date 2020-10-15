@@ -15,11 +15,25 @@
 li{
   padding-left: 15px;
 }
+
 a{
   font-weight: 500;
 }
 a:hover{
   opacity: 0.7;
+}
+.toggle-btn{
+  width: 1.4rem;
+  height: 1.4rem;
+  display: flex;
+  border: 2px solid var(--link);
+  border-radius: 5px;
+  cursor: pointer;
+  i{
+    margin: auto;
+    font-size: 1rem;
+    color: var(--link);
+  }
 }
 
 } 

@@ -2,7 +2,7 @@
     @include flexSpaceB();
     margin: 5% 10%;
     font-size: 1.2rem;
-    color: $colour2;
+    color: var(--link);
 p{
     text-align: center;
 }
@@ -13,11 +13,11 @@ ul{
         padding: 0 10px;
     }
     a{
-        color: $colour2;
+        color: var(--link);
         transition: all 0.3s;
     }
     a:hover{
-        color: $colour1;
+        color: var(--text-color);
     }
 }
 }

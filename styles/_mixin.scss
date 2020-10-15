@@ -1,0 +1,14 @@
+@mixin flexSpaceB(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin projectFlex() {
+    display: flex;
+    flex-direction: column;
+}
+@mixin projectContainer() {
+    display: flex;
+    flex-flow: column;
+    margin: 75px 0;
+}

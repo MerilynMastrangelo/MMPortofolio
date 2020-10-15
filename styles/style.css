@@ -1,9 +1,30 @@
+:root {
+  --background-color: #fff;
+  --text-color: #242424;
+  --link: #b1b1b1;
+  --box: #414040;
+  --project-text: #eee;
+  --project-title-link: #414040;
+  --blend-mode: normal;
+}
+
+.dark-theme {
+  --background-color: #1C1B1B;
+  --text-color: #eee;
+  --box:#939393;
+  --project-text: #eee;
+  --project-title-link: #D3D3D3;
+  --blend-mode: lighten;
+}
+
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Heebo", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 main {
@@ -18,7 +39,7 @@ main {
 
 a {
   text-decoration: none;
-  color: #242424;
+  color: var(--text-color);
 }
 
 li {
@@ -63,12 +84,28 @@ li {
   opacity: 0.7;
 }
 
+.menu-nav .toggle-btn {
+  width: 1.4rem;
+  height: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid var(--link);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-nav .toggle-btn i {
+  margin: auto;
+  font-size: 1rem;
+  color: var(--link);
+}
+
 #home {
   margin-top: 15px;
 }
 
 .home-container {
-  color: #242424;
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -143,13 +180,13 @@ li {
 
 #about .about-social a {
   font-size: 1.2rem;
-  color: #b1b1b1;
+  color: var(--link);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 #about .about-social a:hover {
-  color: #242424;
+  color: var(--text-color);
 }
 
 #about .about-content {
@@ -164,7 +201,7 @@ li {
 }
 
 #about .about-content p a:hover {
-  color: #696969;
+  color: var(--link);
 }
 
 #about .about-content .italic {
@@ -201,7 +238,7 @@ li {
 }
 
 #projects .project-pic {
-  opacity: 0.6;
+  opacity: 0.5;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   max-width: 650px;
@@ -209,6 +246,7 @@ li {
 
 #projects img {
   width: 100%;
+  mix-blend-mode: var(--blend-mode);
 }
 
 #projects .project-pic:hover {
@@ -226,15 +264,15 @@ li {
 }
 
 #projects .project-description p {
-  background-color: #414040;
-  color: #fff;
+  background-color: var(--box);
+  color: var(--project-text);
   padding: 10px 30px;
   font-size: 15px;
 }
 
 #projects h2 {
   margin: 0;
-  color: #414040;
+  color: var(--project-title-link);
   font-size: 1.8rem;
   font-weight: 900;
 }
@@ -246,7 +284,7 @@ li {
 #projects .links i {
   font-size: 26px;
   padding: 0 4px;
-  color: #414040;
+  color: var(--project-title-link);
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -319,7 +357,7 @@ li {
 
 #contact {
   text-align: left;
-  color: #242424;
+  color: var(--text-color);
   margin: 0 10%;
   min-height: 100vh;
   vertical-align: center;
@@ -344,7 +382,7 @@ li {
   font-weight: 400;
   font-size: 3rem;
   line-height: 0.2;
-  border-bottom: 4px solid #b1b1b1;
+  border-bottom: 4px solid var(--link);
   padding-bottom: 2px;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
@@ -352,17 +390,11 @@ li {
 }
 
 #contact span:hover {
-  border-bottom: 4px solid #242424;
+  border-bottom: 4px solid var(--text-color);
 }
 
 #contact img {
   margin-left: 5px;
-}
-
-hr {
-  margin: 0 10%;
-  background-color: #b1b1b1;
-  color: #b1b1b1;
 }
 
 .footer {
@@ -377,7 +409,7 @@ hr {
           align-items: center;
   margin: 5% 10%;
   font-size: 1.2rem;
-  color: #696969;
+  color: var(--link);
 }
 
 .footer p {
@@ -398,13 +430,13 @@ hr {
 }
 
 .footer ul a {
-  color: #696969;
+  color: var(--link);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .footer ul a:hover {
-  color: #242424;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 1000px) {

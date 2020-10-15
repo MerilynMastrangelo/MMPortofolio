@@ -1,0 +1,35 @@
+.dark-theme{
+    --background-color: #1C1B1B;
+    --text-color: #eee;
+    --box:#939393;
+    --project-text: #eee;
+    --project-title-link: #D3D3D3;
+    --blend-mode: lighten;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+main{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+li{
+    list-style-type: none;
+}

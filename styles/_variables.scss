@@ -1,6 +1,10 @@
 $font0: 'Heebo', sans-serif;
-$colour0: #fff;
-$colour1: #242424;
-$colour2: #696969;
-$colour3: #b1b1b1;
-$colour4: #414040;
+:root{
+    --background-color: #fff;
+    --text-color: #242424;
+    --link: #b1b1b1;
+    --box: #414040;
+    --project-text: #eee;
+    --project-title-link: #414040;
+    --blend-mode: normal;
+}
