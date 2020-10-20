@@ -1,4 +1,4 @@
-# MMPortofolio - Personal Portofolio Website
+# MMPortfolio - Personal Portfolio Website
 
 To my first portofolio I included a minimal and functional design focusing to show my projects and my habilities as developer.
 
